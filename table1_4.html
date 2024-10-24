@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table with Internal CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        th,
+        td {
+            border: 1px solid black;
+            padding: 16px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #FF5733;
+            color: white;
+            font-size: 18px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Styled HTML Table with Internal CSS</h1>
+
+    <table>
+        <caption>Project Panda Team Members</caption>
+        <thead>
+            <!-- Table Header -->
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table Rows -->
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>Animator</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>San Francisco</td>
+                <td>Character Artist</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>28</td>
+                <td>Chicago</td>
+                <td>Story Artist</td>
+            </tr>
+            <tr>
+                <td>Daisy</td>
+                <td>22</td>
+                <td>Los Angeles</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>Evan</td>
+                <td>35</td>
+                <td>Miami</td>
+                <td>Engineer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Table Footer -->
+            <tr>
+                <td colspan="4" style="font-weight: bolder;">@ABC-XYZ Company</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
