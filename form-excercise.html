@@ -23,16 +23,28 @@
         <fieldset>
             <legend>Select your interests:</legend>
             <ul>
-                <li><input id="music" type="checkbox" name="music" title="Music"><label for="music">Music</label></li>
-                <li><input id="sports" type="checkbox" name="sports" title="sports"><label for="sports">Sports</label></li>
-                <li><input id="reading" type="checkbox" name="reading" title="reading"><label for="reading">Reading</label></li>
+                <li>
+                    <input id="music" type="checkbox" name="music" title="Music">
+                    <label for="music">Music</label>
+                </li>
+                <li>
+                    <input id="sports" type="checkbox" name="sports" title="sports">
+                    <label for="sports">Sports</label></li>
+                <li>
+                    <input id="reading" type="checkbox" name="reading" title="reading">
+                    <label for="reading">Reading</label></li>
             </ul>
         </fieldset>
         <fieldset>
             <legend>Select your gender:</legend>
             <ul>
-                <li><input id="male" type="radio" name="male" title="male"><label for="male">Male</label></li>
-                <li><input id="female" type="radio" name="female" title="male"><label for="female">Female</label></li>
+                <li>
+                    <input id="male" type="radio" name="gender" title="male" value="male">
+                    <label for="male">Male</label>
+                </li>
+                <li>
+                    <input id="female" type="radio" name="gender" title="male" value="female">
+                    <label for="female">Female</label></li>
             </ul>
         </fieldset>
         <p>
@@ -47,7 +59,7 @@
             </select>
         </p>
         <p>Any additional comments?</p>
-        <textarea placeholder="Write your comments here..." rows="10" cols="50"></textarea>
+        <textarea placeholder="Write your comments here..." rows="10" cols="50" id="comments" name="comments"></textarea>
         <p>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
