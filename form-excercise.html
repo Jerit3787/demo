@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creation - Example</title>
+</head>
+
+<body>
+    <h3>User Registeration</h3>
+    <form>
+        <p>
+            <label for="first-name">First Name: <span aria-required="true">*</span></label>
+            <input id="first-name" type="text" name="first-name" placeholder="First Name" required>
+            <label for="last-name">Last Name: <span aria-required="true">*</span></label>
+            <input id="last-name" type="text" name="last-name" required>
+            <label for="email">E-Mail: <span aria-required="true">*</span></label>
+            <input id="email" type="email" name="email" required>
+            <label for="password">Password: <span aria-required="true">*</span></label>
+            <input id="password" type="password" name="password" placeholder="Between 6-10 characters" minlength="6" maxlength="10" required>
+        </p>
+        <fieldset>
+            <legend>Select your interests:</legend>
+            <ul>
+                <li><input id="music" type="checkbox" name="music" title="Music"><label for="music">Music</label></li>
+                <li><input id="sports" type="checkbox" name="sports" title="sports"><label for="sports">Sports</label></li>
+                <li><input id="reading" type="checkbox" name="reading" title="reading"><label for="reading">Reading</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Select your gender:</legend>
+            <ul>
+                <li><input id="male" type="radio" name="male" title="male"><label for="male">Male</label></li>
+                <li><input id="female" type="radio" name="female" title="male"><label for="female">Female</label></li>
+            </ul>
+        </fieldset>
+        <p>
+            Select your country:
+            <select id="country" name="country">
+                <option value="malaysia">Malaysia</option>
+                <option value="singapore">Singapore</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="thailand">Thailand</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="philippines">Philippines</option>
+            </select>
+        </p>
+        <p>Any additional comments?</p>
+        <textarea placeholder="Write your comments here..." rows="10" cols="50"></textarea>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>
