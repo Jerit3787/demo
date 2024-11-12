@@ -68,23 +68,35 @@ h3 {
 /* second example */
 
 .equal-height-container {
+    display: flex;
+    flex-flow: row nowrap;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .first {
+    flex: 4;
+    order: 2;
     background-color: #FFF;
     padding: 20px;
 }
 
 .second {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    order: 1;
     background-color: yellow;
 }
 
 .second-a {
+    /*text-align: center;*/
+    padding: 50%;
     background-color: #c0dbe2;
 }
 
 .second-b {
+    /*text-align: center; */
+    padding: 50%;
     background-color: #cdf1c3;
 }
