@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Lab Exercise</title>
+    <link rel="stylesheet" href="src/css/style_json.css">
+</head>
+
+<body>
+    <h1>JSON Serialization and Deserialization Lab</h1>
+
+    <section>
+        <h2>Movie List</h2>
+        <div id="movieList">
+        </div>
+    </section>
+
+    <section>
+        <h2>Add a Movie</h2>
+        <form id="movieForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+            <button type="submit">Add Movie</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Serialized JSON Output</h2>
+        <!-- The <pre> tag in HTML stands for "preformatted text".
+      It maintains the text’s original formatting-->
+        <pre id="jsonOutput"></pre>
+    </section>
+
+    <script src="src/js/script-jsonlab.js"></script>
+</body>
+
+</html>
