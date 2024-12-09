@@ -46,7 +46,29 @@ function serializeJSON(jsonObject) {
 const movieForm = document.querySelector('#movieForm');
 
 movieForm.addEventListener('submit', (e) => {
-    e.preventDefault;
+    e.preventDefault();
 
-    const title;
+    const title = movieForm.title.value;
+    const genre = movieForm.genre.value;
+    const price = movieForm.price.value;
+
+    movies.push({ title, genre, price });
+
+    displayMovies(movies);
+    serializeJSON(movies);
+
+    const jsonString = JSON.stringify(movies);
+    const deserializedMovies = deserializeMovies(jsonString);
+    console.log(deserializedMovies);
+
+    // Reset form
+    movieForm.title.value = '';
+    movieForm.genre.value = '';
+    movieForm.price.value = '';
 })
+
+function deserializeMovies(jsonString) {
+    const jsonObject = JSON.parse(jsonString)
+
+    return jsonObject;
+}

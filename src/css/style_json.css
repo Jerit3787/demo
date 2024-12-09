@@ -9,6 +9,7 @@
     box-shadow: 1px 1px 5px lightgrey;
     border-radius: 10px;
     width: 200px;
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 .movie-title {
