@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation and Storage</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <h1>Geolocation and Web Storage Example</h1>
+
+    <!-- Section to display current location -->
+    <div id="location-display">
+        <p><strong>Current Location:</strong></p>
+        <p id="latitude">Latitude: Not available</p>
+        <p id="longitude">Longitude: Not available</p>
+        <button id="get-location">Get Location</button>
+    </div>
+
+    <!-- Section to save and display saved location -->
+    <div id="saved-location">
+        <p><strong>Saved Location:</strong></p>
+        <p id="saved-latitude">Latitude: Not saved</p>
+        <p id="saved-longitude">Longitude: Not saved</p>
+        <button id="save-location">Save Location</button>
+        <button id="load-location">Load Saved Location</button>
+    </div>
+
+    <script src="src/js/scriptAPI.js"></script>
+</body>
+
+</html>
