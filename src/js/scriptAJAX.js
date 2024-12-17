@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     })
     // })
 
-    async function handleSubmit(event) {
+    async function handleSubmit(event, other) {
         event.preventDefault();
 
         const username = usernameInput.value;
