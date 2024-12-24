@@ -1,0 +1,57 @@
+body {
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 12px;
+    margin-top: 12px;
+    box-shadow: 5px 8px 6px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+}
+
+.card h3 {
+    margin: 0px;
+    color: blue;
+}
+
+#add-blog-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#title,
+#content {
+    margin: 0px 0px 12px 0px;
+    padding: 6px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    height: 70px;
+}
+
+#submit-button {
+    width: fit-content;
+    background-color: #5AA858ff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    color: white;
+}
+
+#submit-button:hover {
+    border: 1px solid yellow;
+}
+
+#submit-button:active {
+    background-color: #30472f;
+}
